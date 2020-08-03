@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      body{
+        margin:0;
+        text-align:center;
+        padding-top:24px;
+        background-color:lightblue;
+      }
+
+      #add-item{
+        width:250px;
+        padding:8px;
+        border-radius:6px;
+        border:none;
+      }
+
+      #add-btn{
+        width:100px;
+        padding:8px;
+        border-radius:6px;
+        border:2px solid gray;
+        background-color:#eee;
+      }
+
+      #add-btn:hover,#del-btn:hover{
+        cursor:pointer;
+      }
+
+      #del-btn{
+        width:150px;
+        padding:8px;
+        border-radius:6px;
+        border:2px solid gray;
+        background-color:red;
+      }
+
+      div{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin: 24px auto;
+        background-color:white;
+        width:500px;
+        border-radius:16px;
+        padding:16px 0;
+      }
+
+      #todo-list{
+        text-align:center;
+        list-style-type:none;
+        background-color:#fff;
+        border-radius:16px;
+        padding:0;
+      }
+
+      h4{
+        margin:0;
+      }
+
+      li{
+        margin:16px;
+        padding:8px 0;
+        background-color:lightblue;
+        border-radius: 6px;
+        width:400px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <input id="add-item" type="text" placeholder="Add Item">
+    <br><br>
+    <input type="submit" value="Add Item" id="add-btn">
+    <input type="submit" value="Delete First Item" id="del-btn">
+    <div>
+      <h4>To-Do Items<h4/>
+      <ul id="todo-list">
+        
+      </ul>
+    </div>
+    
+     <script src="/index.js"></script> 
+  </body>
+  
+</html>
