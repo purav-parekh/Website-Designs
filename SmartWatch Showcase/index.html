@@ -1,0 +1,191 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Smart Watch Showcase</title> 
+
+      <style>
+        body{
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; /*Montserrat, 'Source Sans Pro';*/
+        }
+
+        nav{
+          text-align: center;
+          background-color: black;
+          width:100%;
+        }
+
+        #logo{
+          margin: 0 auto;
+          height:60px;
+          width:160px;
+        }
+
+        .img-wrapper{
+          display: inline-block;
+        }
+
+        #watch{
+          margin: 0 auto;
+          height:300px;
+          width: 300px;
+        }
+
+        .main{
+          display:flex;
+          flex-direction:row;
+          text-align: left;
+          margin: 0px auto;
+          padding: 24px;
+        }
+
+        #title-wrapper{
+          padding: 0 24px;
+        }
+
+        #desc{
+          color: rgb(116, 109, 109);
+        }
+
+        #heartRate,#time-text{
+          margin:0;
+          padding:0 24px;
+        }
+
+        #heartRate{
+          display:none;
+        }
+
+        #color-wrapper{
+          padding: 0 24px;
+        }
+
+
+        #features-wrapper{
+          padding: 0 24px;
+        }
+
+        #color-1,#color-2,#color-3,#color-4{
+          height: 40px;
+          width:50px;
+          border: none;
+          border-radius: 8px;
+        }
+
+        #color-1{
+          background-color: #23211f;
+        }
+
+        #color-2{
+          background-color: #ca3d22;
+        }
+
+        #color-3{
+          background-color: #565681;
+        }
+
+        #color-4{
+          background-color: #e9c7be;
+        }
+
+        #time,#heart-rate{
+          padding: 8px;
+          border: none;
+          border-radius: 8px;
+        }
+
+        #buynow-wrapper{
+          padding: 0 24px;
+        }
+
+        #buy-now{
+          background-color: orangered;
+          padding: 8px;
+          border: none;
+          border-radius: 8px;
+        }
+
+        @media only screen and (max-width: 610px) {
+          .img-wrapper{
+            display: inline-block;
+            width: 100%;
+          }
+
+          #watch{
+            margin: 0 20%;
+            height:300px;
+            width: 300px;
+            margin-bottom: 18px;
+          }
+
+          .main{
+            display:flex;   
+            flex-direction:column;
+            text-align: left;
+            margin: 0px auto;
+            padding: 24px;
+          }
+        }
+
+
+        @media only screen and (max-width: 500px) {
+          .img-wrapper{
+            display: inline-block;
+            width: 100%;
+          }
+
+          #watch{
+            margin: 0 10%;
+            height:280px;
+            width: 280px;
+            margin-bottom: 18px;
+          }
+
+          .main{
+            display:flex;   
+            flex-direction:column;
+            text-align: left;
+            margin: 0px auto;
+            padding: 24px;
+          }
+        }
+
+    </style>
+  </head>
+  <body>
+      <nav id="nav-bar">
+          <img id= "logo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthewordbite.files.wordpress.com%2F2017%2F06%2Fc41.jpg&f=1&nofb=1" alt="amazon-logo">
+      </nav>
+      <main class="main">
+          <div class="img-wrapper">
+              <img id="watch" src="https://i.imgur.com/PTgQlim.png" alt="smart-watch-red">
+          </div>
+        <section>
+          <div id="title-wrapper">
+              <h1 id="title">FitBit 19- The Smartest Watch</h1>
+              <p id="desc">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
+          </div>
+          <p id="time-text"></p>
+          <p id="heartRate">72</p>
+          <div id="color-wrapper">
+              <h3 id="color-select">Select Color</h3> 
+              <button id="color-1"></button> <button id="color-2"></button> <button id="color-3"></button> <button id="color-4"></button>
+          </div>
+          <div id="features-wrapper">
+              <h3 id="features">Features</h3>
+              <input id="time" type="button" value="Time">
+              <input id="heart-rate" type="button" value="Heart Rate">
+          </div>
+          <br>
+          <div id="buynow-wrapper">
+          <button id="buy-now" value="BUY NOW">BUY NOW</button>
+          </div>
+        </section>
+      </main>
+
+      <script src="/JavaScript/index.js"></script> 
+  </body>
+</html>
